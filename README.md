@@ -2,26 +2,7 @@
 
 This is a repo using [Turborepo](https://turbo.build/) for desktop app workflow. This repo includes a [Tauri](https://tauri.app/) app with autoupdater and [Next.js](https://nextjs.org/) app with landing page and api calls for autoupdater
 
-## What's inside?
-
-This turborepo uses [pnpm](https://pnpm.io) as a package manager. It includes the following packages/apps:
-
-### Apps and Packages
-
-- `desktop`: a [Tauri](https://tauri.app/) app
-- `web`: a [Next.js](https://nextjs.org/) app
-
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
-
-### Utilities
-
-This turborepo has some additional tools already setup for you:
-
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
-
-### Instructions to setup
+## Instructions to setup
 
 
 1. Delete git
@@ -48,7 +29,7 @@ This turborepo has some additional tools already setup for you:
 ```
 
 5. Add public key in 'apps/desktop/src-tauri/tauri.conf.json'. See reference [here](https://tauri.app/v1/guides/distribution/updater#configuration)
-```json
+```bash
     ...
     "tauri": {
         ...
@@ -71,7 +52,7 @@ Then set token as environment variable 'GITHUB_TOKEN' in server or as key in loc
 ```
 
 8. Set update endpoint in 'apps/desktop/src-tauri/tauri.conf.json'
-```json
+```bash
     ...
     "tauri": {
         ...
@@ -99,6 +80,25 @@ Use script
 ```bash
     pnpm release:desktop <major|minor|patch>
 ```
+
+### What's inside?
+
+This turborepo uses [pnpm](https://pnpm.io) as a package manager. It includes the following packages/apps:
+
+### Apps and Packages
+
+- `desktop`: a [Tauri](https://tauri.app/) app
+- `web`: a [Next.js](https://nextjs.org/) app
+
+Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
+
+### Utilities
+
+This turborepo has some additional tools already setup for you:
+
+- [TypeScript](https://www.typescriptlang.org/) for static type checking
+- [ESLint](https://eslint.org/) for code linting
+- [Prettier](https://prettier.io) for code formatting
 
 ### Build
 

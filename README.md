@@ -2,8 +2,12 @@
 
 This is a repo using [Turborepo](https://turbo.build/) for desktop app workflow. This repo includes a [Tauri](https://tauri.app/) app with autoupdater and [Next.js](https://nextjs.org/) app with landing page and api calls for autoupdater
 
-## Instructions to setup
+## Installation
+```bash
+    npx degit ihsanvp/tauri-autoupdater-starter <foldername>
+```
 
+## Instructions to setup
 
 1. Delete git
 ```bash
